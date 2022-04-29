@@ -1,0 +1,126 @@
+html.txt
+
+
+/////
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>App to add two Nos</title>
+</head>
+<body>
+<script type="text/javascript">
+function myfunc() {
+var n1 = document.getElementById("num1").value;
+var n2 = document.getElementById("num2").value;
+var n3 = document.getElementById("num3").value;
+var n4 = document.getElementById("num4").value;
+var n5 = document.getElementById("num5").value;
+var n6 = document.getElementById("num6").value;
+var n7 = document.getElementById("num7").value;
+var n8 = parseInt(n5) + parseInt(n6) + parseInt(n7);
+document.getElementById("num8").value = n1 + "\n" + n2 + "\n" + n3 + "\n" + n4 + "\n" + n5 + "\n" + n6 + "\n" + n7 + "\n" + n8;
+}
+</script>
+Enter Name: <input type="text" id="num1"><br>
+Enter Address: <input type="text" id="num2"><br>
+Enter DOB: <input type="text" id="num3"><br>
+Enter contact no.: <input type="number" id="num4"><br>
+Marks English: <input type="number" id="num5"><br>
+Marks Physics: <input type="number" id="num6"><br>
+Enter Chemistry: <input type="number" id="num7"><br>
+<button onclick="myfunc()">Submit</button>
+<br\>
+<p id="para1"></p>
+<textarea id="num8" name="myarea" rows="7" cols="50">
+</textarea>
+</body>
+</html>
+
+
+
+/////
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+<form action="selection">
+<label for="items">choose an id:</label>
+<select id="items" name="emid">
+<option value="item1">180905093</option>
+<option value="item2">180905221</option>
+<option value="item3">180905343</option>
+<option value="item4">180905480</option>
+<option value="item5">180905555</option>
+</select><br>
+enter the date of joining: <input type="date" id = "doj" name="doj"><br>
+<input type="submit" value="submit"><br>
+</form>
+</body>
+</html>
+
+
+
+/////
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Result</title>
+</head>
+<body>
+{{selection}}
+</body>
+</html>
+
+
+
+/////
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+<script type="text/javascript">
+function calculator(){
+var n1 = parseFloat(document.getElementById('num1').value);
+var n2 = parseFloat(document.getElementById('num2').value);
+var n3 = document.getElementById('op').value;
+if(n3=="+"){
+n4 = n1+n2;
+}
+else if(n3=="-"){
+n4 = n1-n2;
+}
+else if(n3=="*"){
+n4 = n1*n2;
+}
+else if(n3=="/"){
+n4=n1/n2;
+}
+document.getElementById('result').innerHTML = n4;
+}
+</script>
+<input type="number" id = 'num1'><br>
+<input type="number" id = 'num2'><br>
+<label for="op">select the operation to be performed</label>
+<select name="op" id="op">
+<option value="+">+</option>
+<option value="-">-</option>
+<option value="*">*</option>
+<option value="/">/</option>
+</select>
+<br>
+<button onclick="calculator()">calculate</button><br>
+<h3 id="result"></h3>
+</body>
+</html>
+
